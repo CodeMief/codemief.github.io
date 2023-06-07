@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'hattori-hanzo';
+  src: url(font/hattori-hanzo.light.otf);
+}
+.emote{
+  object-fit: cover;
+}
+.spacer {
+  height: 3rem;
+}
+
+.spacerSmall {
+  height: 1.5rem;
+}
+
+.gap {
+  gap: 0.2em;
+}
+.center{
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+  background-color: #1a1a1a;
+  --basic-color: white;
+  --title-color: rgb(55, 67, 100);
+  --username-color: rgb(130, 123, 187);
+  --twitch-darkmode: #181818;
+  --discord-darkmode: #36393f;
+  padding: 1rem 12%;
+}
+
+label, input, p, a{
+  color: var(--basic-color);
+
+}
+
+body header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+body header nav .navBrand a {
+  text-decoration: none;
+}
+
+body header nav .navBrand a h1 {
+  color: var(--basic-color);
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+body header nav .navBrand a h1 span {
+  font-size: 1.5rem;
+  color: var(--title-color);
+}
+
+body header nav #burger {
+  cursor: pointer;
+}
+
+body header nav #burger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: var(--basic-color);
+}
+
+body header nav .navNav ul li {
+  list-style: none;
+}
+
+body header nav .navNav ul li a {
+  text-decoration: none;
+}
+
+body header nav .navNav ul li a h2 {
+  color: var(--basic-color);
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+body main .section .textBox {
+  padding: 1rem;
+}
+
+body main .section .textBox .lineBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body main .section #lightmodeTwitch {
+  background-color: #fff;
+}
+
+body main .section #lightmodeTwitch .userName {
+  color: var(--username-color);
+  font-weight: 600;
+}
+
+body main .section #darkmodeTwitch {
+  background-color: var(--twitch-darkmode);
+}
+
+body main .section #darkmodeTwitch .userName {
+  color: var(--username-color);
+  font-weight: 600;
+}
+
+body main .section #darkmodeTwitch .chatMessageSeparator,
+body main .section #darkmodeTwitch .chatMessageText {
+  color: white;
+}
+
+body main .section #darkmodeDiscord {
+  background-color: var(--discord-darkmode);
+}
+
+body main .section #darkmodeDiscord .userNameDiscord {
+  color: var(--username-color);
+}
+
+body main .section #darkmodeDiscord .chatDateText,
+body main .section #darkmodeDiscord .chatMessageText {
+  color: white;
+}
+
+body main .section .reactionContainer p {
+  font-size: 0.9rem;
+}
+
+body main .section #lightmodeDiscord {
+  background-color: var(--basic-color);
+}
+
+body main .section #lightmodeDiscord .userNameDiscord {
+  color: var(--username-color);
+}
+
+body main .section #lightmodeDiscord .chatDateText,
+body main .section #lightmodeDiscord .chatMessageText {
+  color: black;
+}
+
+body main .section #lightmodeDiscord .reactionContainer p {
+  color: #1755b8;
+}
+
+
+
+body main .section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body main .section .row h1 {
+  font-size: 2rem;
+  color: var(--basic-color);
+}
+
+body main .section .row .imgTwitchContainer {
+  padding: 0 5px;
+}
+
+body main .section .row .imgTwitchContainer .small {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+body main .section .row .imgTwitchContainer .badge {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+body main .section .row .imgTwitchContainer .medium {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+body main .section .row .imgTwitchContainer .large {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+
+body main .section .row .discordBox {
+  font-family: 'hattori-hanzo';
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+body main .section .row .discordBox .discordInnerBox {
+  display: flex;
+  align-items: center;
+}
+
+body main .section .row .discordBox p .userNameDiscord {
+  font-weight: 800;
+  padding-right: 10px;
+}
+
+body main .section .row .discordBox p .chatDateText {
+  font-weight: 500;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+body main .section .row .discordBox .imgDiscordContainer .small {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+body main .section .row .discordBox .imgDiscordContainer .medium {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+body main .section .row .discordBox .reactionContainer {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  background-color: #5b87ff5b;
+  border-radius: 8px;
+  padding: 3px 5px;
+  border: 1px solid #5b81ff;
+}
+body main .section .row .discordBox .reactionContainer p {
+  color: var(--basic-color);
+}
+
+body main .section .row .discordBox .reactionContainer .reaction {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+body footer {
+  display: flex;
+  justify-content: center;
+}
+
+body footer p {
+  font-size: 1rem;
+  color: var(--basic-color);
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+@media (min-width: 769px) {
+  .row {
+    flex-wrap: nowrap;
+  }
+  
+  .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
